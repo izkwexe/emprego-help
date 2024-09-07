@@ -6,6 +6,11 @@
 }
 
 /* Estilos gerais */
+html, body {
+    height: 100%; /* Garante que o body possa crescer conforme necessário */
+    overflow-x: hidden; /* Evita rolagem horizontal */
+}
+
 body {
     font-family: 'Arial', sans-serif;
     background: linear-gradient(135deg, #6dd5ed, #2193b0);
@@ -241,6 +246,4 @@ nav a:hover {
     .team-member p {
         font-size: 0.9rem;
     }
-
-    
 }
