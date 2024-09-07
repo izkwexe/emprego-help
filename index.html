@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <a href="#" class="logo">Black DEV</a>
+        <ul>
+            <li><a href="#team-section">Equipe</a></li>
+            <li><a href="#versions">Versões</a></li>
+            <li><a href="#contact">Contato</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Seção de Equipe de Desenvolvimento -->
+<div class="team-section" id="team-section" role="group" aria-labelledby="team-heading">
+    <h2 id="team-heading">Equipe de Desenvolvimento</h2>
+    <p>clique no perfil dos desenvolvedores para contato</p>
+    <div class="team-container">
+        <a href="https://bio.site/isaque_" class="team-member" target="_blank" aria-label="Perfil de Isaque no Bio">
+            <img src="foto_/isaque.webp" alt="Foto de Isaque, desenvolvedor" />
+            <p>Isaque</p>
+        </a>
+        <a href="https://www.instagram.com/bleidson._/" class="team-member" target="_blank" aria-label="Perfil de Bleidson no Instagram">
+            <img src="foto_/bleidson.jpg" alt="Foto de Bleidson, desenvolvedor" />
+            <p>Bleidson</p>
+        </a>
+        <a href="https://www.instagram.com/lucaslustt/" class="team-member" target="_blank" aria-label="Perfil de Lucas no portfólio">
+            <img src="foto_/lucas.jpg" alt="Foto de Lucas, desenvolvedor" />
+            <p>Lucas</p>
+        </a>
+        <a href="https://www.instagram.com/carlos.roberto.sq/" class="team-member" target="_blank" aria-label="Perfil de Roberto no Instagram">
+            <img src="foto_/roberto.jpg" alt="Foto de Roberto, desenvolvedor" />
+            <p>Roberto</p>
+        </a>
+        <a href="https://www.instagram.com/eduzin_s_/" class="team-member" target="_blank" aria-label="Perfil de Eduardo no Instagram">
+            <img src="foto_/eduardo.jpg" alt="Foto de Eduardo, desenvolvedor" />
+            <p>Eduardo</p>
+        </a>
+        <a href="https://www.instagram.com/carlos__andre77/" class="team-member" target="_blank" aria-label="Perfil de André no Instagram">
+            <img src="foto_/andre.jpg" alt="Foto de André, desenvolvedor" />
+            <p>André</p>
+        </a>
+    </div>
+</div>
+
+<!-- Seção de Escolha de Versão -->
+<div class="container" id="versions">
+    <div class="box" role="button" tabindex="0" onclick="goToPage('mobile')" aria-label="Ir para a versão Mobile">
+        <h2>Versão Mobile</h2>
+        <p>Otimizado para smartphones e tablets.</p>
+    </div>
+    <div class="box" role="button" tabindex="0" onclick="goToPage('projeto')" aria-label="Ir para a versão Projeto">
+        <h2>Versão Projeto</h2>
+        <p>Explorando funcionalidades e experimentos em design.</p>
+    </div>
+    <div class="box" role="button" tabindex="0" onclick="goToPage('desktop')" aria-label="Ir para a versão Desktop">
+        <h2>Versão Desktop</h2>
+        <p>Design completo para computadores e laptops.</p>
+    </div>
+</div>
+
+<script>
+    function goToPage(version) {
+        if (version === 'mobile') {
+            window.location.href = 'version/isaque/index.html';
+        } else if (version === 'projeto') {
+            window.location.href = 'version/roberto/index.html';
+        } else if (version === 'desktop') {
+            window.location.href = 'version/bleidson/index.html';
+        }
+    }
+</script>
+
+</body>
+</html>

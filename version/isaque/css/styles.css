@@ -1,0 +1,192 @@
+/* Variáveis CSS */
+:root {
+    --cor-primaria: #003366; /* Azul escuro */
+    --cor-secundaria: #0066cc; /* Azul brilhante */
+    --cor-fundo: #f4f4f4;
+    --cor-fundo-secundario: #eaf2f8;
+    --cor-texto: #fff;
+    --cor-texto-secundario: #666;
+    --cor-borda: #0066cc;
+    --cor-borda-hover: #003366;
+    --largura-max: 1200px;
+    --radius: 15px;
+}
+
+/* Estilos Globais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: var(--cor-fundo);
+}
+
+.container {
+    width: 90%;
+    max-width: var(--largura-max);
+    margin: 0 auto;
+}
+
+/* Cabeçalho */
+header {
+    background: var(--cor-primaria);
+    color: var(--cor-texto);
+    padding: 15px 0;
+    border-bottom: 4px solid var(--cor-secundaria);
+}
+
+header h1 {
+    margin: 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin: 10px 0 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: var(--cor-texto);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Seção Hero */
+.hero {
+    background: var(--cor-secundaria);
+    padding: 40px 0;
+    text-align: center;
+    color: var(--cor-texto);
+    border-radius: var(--radius);
+    margin-bottom: 20px;
+}
+
+.hero input[type="text"] {
+    padding: 10px;
+    width: calc(100% - 130px); /* Ajuste de largura considerando o botão */
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    font-size: 16px;
+    margin-right: 10px;
+    box-sizing: border-box;
+}
+
+.hero button {
+    padding: 10px 20px;
+    background: var(--cor-primaria);
+    color: var(--cor-texto);
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    font-size: 16px;
+    width: 100px;
+}
+
+.hero button:hover {
+    background: #002244; /* Azul mais escuro */
+}
+
+/* Catálogo de Serviços */
+.catalog {
+    padding: 20px 0;
+    background: var(--cor-fundo-secundario);
+}
+
+.catalog h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--cor-primaria);
+}
+
+.catalog-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.catalog-item {
+    background: #fff;
+    padding: 20px;
+    border-radius: var(--radius);
+    width: 100%;
+    max-width: 350px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: 2px solid var(--cor-borda);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box;
+}
+
+.catalog-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-color: var(--cor-borda-hover);
+}
+
+.catalog-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    border-bottom: 2px solid var(--cor-borda);
+}
+
+.catalog-item h3 {
+    margin-top: 15px;
+    color: var(--cor-primaria);
+}
+
+.catalog-item p {
+    color: var(--cor-texto-secundario);
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+/* Rodapé */
+footer {
+    background: var(--cor-primaria);
+    color: var(--cor-texto);
+    padding: 15px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .hero input[type="text"], .hero button {
+        width: 100%;
+        max-width: none;
+        margin: 10px 0;
+        display: block;
+        box-sizing: border-box;
+    }
+
+    .hero input[type="text"] {
+        width: calc(100% - 20px); /* Ajuste para o botão */
+    }
+
+    .catalog-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .catalog-item {
+        max-width: 100%;
+    }
+}

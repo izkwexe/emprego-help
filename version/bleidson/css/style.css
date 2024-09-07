@@ -1,0 +1,362 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Estilo para o Header */
+  header {
+    background: linear-gradient(to right, #223A59, #032930);
+    padding: 10px;
+  }
+  
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .logo h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .logo h1:hover {
+    color: #ffcc00; /* Cor de destaque ao passar o mouse */
+  }
+  
+  .menu {
+    list-style: none;
+    display: none; /* Menu escondido por padrão em mobile */
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .menu li {
+    text-align: center;
+    margin: 10px 0;
+  }
+  
+  .menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 10px 0;
+    display: block;
+    transition: background 0.3s;
+  }
+  
+  .menu a:hover {
+    background-color: #004080;
+  }
+  
+  .menu-toggle {
+    display: block;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  /* Login Links */
+  .login {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .login a {
+    margin: 10px 0;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid white;
+    font-weight: bold;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  .login a:hover {
+    background-color: white;
+    color: #1a75ff;
+  }
+  
+/* Full Screen Banner */
+.full-screen {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #223A59, #032930);
+  color: white;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.banner-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Company Description */
+.company-description {
+  flex: 1;
+  margin-right: 50px;
+}
+
+.company-description h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+.company-description p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 500px;
+}
+
+/* Login Box */
+.login-box {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 6px 7px 15px 5px rgb(211, 232, 225);
+  width: 350px;
+  color: #333;
+  
+
+}
+
+.login-box h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  font-size: 1rem;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.btn-login {
+  width: 100%;
+  padding: 12px;
+  background-color: #1a75ff;
+  color: white;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-login:hover {
+  background-color: #004080;
+}
+
+/* Job Offers Section - Hidden on Page Load */
+.job-offers {
+  padding: 40px 20px;
+  background-color: #f4f4f4;
+}
+
+/* Scroll Behavior */
+html, body {
+  scroll-behavior: smooth;
+}
+
+  
+/* Ofertas de Emprego */
+.job-offers {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+  
+  .job-offers h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  .job-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .job-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .job-card img.company-logo {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-right: 20px;
+  }
+  
+  .job-info {
+    flex: 1;
+  }
+  
+  .job-info h3 {
+    font-size: 1.5rem;
+    color: #1a75ff;
+    margin-bottom: 10px;
+  }
+  
+  .job-info p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 5px;
+  }
+  
+  .job-card .btn-job {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #1a75ff;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  .job-card .btn-job:hover {
+    background-color: #004080;
+  }
+  
+  /* Responsivo */
+  @media (min-width: 768px) {
+    .job-card {
+      padding: 30px;
+    }
+  
+    .job-card img.company-logo {
+      width: 100px;
+      height: 100px;
+    }
+  
+    .job-info h3 {
+      font-size: 1.7rem;
+    }
+  
+    .job-info p {
+      font-size: 1.1rem;
+    }
+  
+    .job-card .btn-job {
+      padding: 12px 20px;
+    }
+  }
+  
+  
+  /* Footer */
+  footer {
+    background-color: #004080;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  footer p {
+    font-size: 0.9rem;
+  }
+  
+  /* ----------- Media Queries para Tablets e Desktops ----------- */
+  
+  @media (min-width: 768px) {
+    header nav {
+      flex-direction: row;
+    }
+  
+    .menu {
+      display: flex; /* Mostrar menu horizontalmente */
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      width: auto;
+    }
+  
+    .menu li {
+      margin: 0 15px;
+    }
+  
+    .login {
+      flex-direction: row;
+      width: auto;
+    }
+  
+    .login a {
+      margin: 0 10px;
+    }
+  
+    .banner h1 {
+      font-size: 3rem;
+    }
+  
+    .banner p {
+      font-size: 1.5rem;
+    }
+  
+    .banner .btn {
+      padding: 15px 30px;
+    }
+  }
+  
+  /* ----------- Media Queries para Desktops Grandes ----------- */
+  
+  @media (min-width: 1024px) {
+    header nav {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+  
+    .menu-toggle {
+      display: none; /* Ocultar o botão de menu em telas grandes */
+    }
+  }
+  

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emprego Help</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Emprego Help</h1>
+    </header>
+    <main>
+        <section class="gallery">
+            <div class="image-container" onclick="toggleAnimation(this)">
+                <img src="images/prototipo1.png" alt="Protótipo 1">
+            </div>
+            <div class="image-container" onclick="toggleAnimation(this)">
+                <img src="images/prototipo2.png" alt="Protótipo 2">
+            </div>
+            <div class="image-container" onclick="toggleAnimation(this)">
+                <img src="images/prototipo3.png" alt="Protótipo 3">
+            </div>
+            <div class="image-container" onclick="toggleAnimation(this)">
+                <img src="images/prototipo4.png" alt="Protótipo 4">
+            </div>
+            <div class="image-container" onclick="toggleAnimation(this)">
+                <img src="images/prototipo5.png" alt="Protótipo 5">
+            </div>
+            <div class="image-container" onclick="toggleAnimation(this)">
+                <img src="images/prototipo6.png" alt="Protótipo 6">
+            </div>
+            <div class="image-container" onclick="toggleAnimation(this)">
+                <img src="images/prototipo7.png" alt="Protótipo 7">
+            </div>
+        </section>
+    </main>
+    <script>
+        function toggleAnimation(element) {
+            element.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
